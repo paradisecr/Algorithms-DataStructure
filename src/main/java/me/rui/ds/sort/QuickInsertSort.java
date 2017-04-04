@@ -29,7 +29,7 @@ public class QuickInsertSort implements Sortable {
         for (int i = left + 1; i <= right; i++) {
             Comparable tmp = a[i];
             int j;
-            for (j = i -1; j>=left && SortUtils.less(a[j], a[j+1]); j--) SortUtils.swap(a, j, j+1);
+            for (j = i -1; j>=left && SortUtils.less(a[j+1], a[j]); j--) SortUtils.swap(a, j, j+1);
             a[j+1] = tmp;
         }
     }

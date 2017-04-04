@@ -11,6 +11,22 @@ import static me.rui.ds.sort.SortUtils.randowSeq;
  */
 public class SortTest {
 
+
+    @Test
+    public void quickInsertSort2Test() {
+        Sortable sortable = new QuickInsertSort2();
+        Integer[] a = randowSeq(100,1000);
+        sortable.sort(a);
+        Assert.assertTrue(isSorted(a));
+    }
+    @Test
+    public void quickInsertSortTest() {
+        Sortable sortable = new QuickInsertSort();
+        Integer[] a = randowSeq(100,1000);
+        sortable.sort(a);
+        Assert.assertTrue(isSorted(a));
+    }
+
     @Test
     public void quickSortTest() {
         Sortable sortable = new QuickSort();
