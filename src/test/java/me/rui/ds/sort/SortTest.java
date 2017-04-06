@@ -11,6 +11,14 @@ import static me.rui.ds.sort.SortUtils.randowSeq;
  */
 public class SortTest {
 
+
+    @Test
+    public void bubbleSortTest() {
+        Sortable sortable = new BubbleSort();
+        Integer[] a = randowSeq(100,1000);
+        sortable.sort(a);
+        Assert.assertTrue(isSorted(a));
+    }
     @Test
     public void mergeSortTest() {
         Sortable sortable = new MergeSort();
