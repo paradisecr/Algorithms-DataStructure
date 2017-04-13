@@ -12,6 +12,9 @@ import static me.rui.ds.sort.SortUtils.randomSeq;
 public class SortTest {
 
 
+    /**
+     * 冒泡排序测试
+     */
     @Test
     public void bubbleSortTest() {
         Sortable sortable = new BubbleSort();
@@ -19,6 +22,10 @@ public class SortTest {
         sortable.sort(a);
         Assert.assertTrue(isSorted(a));
     }
+
+    /**
+     * 归并排序测试
+     */
     @Test
     public void mergeSortTest() {
         Sortable sortable = new MergeSort();
@@ -26,6 +33,7 @@ public class SortTest {
         sortable.sort(a);
         Assert.assertTrue(isSorted(a));
     }
+
 
     @Test
     public void quickInsertSort2Test() {
