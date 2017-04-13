@@ -1,7 +1,6 @@
 package me.rui.ds.sort;
 
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 import java.util.regex.Pattern;
 
 /**
@@ -27,7 +26,7 @@ public class SortUtils {
     }
 
 
-    public static Integer[] randowSeq(int num, int scope) {
+    public static Integer[] randomSeq(int num, int scope) {
         Integer[] seq = new Integer[num];
         for (int i=0; i<seq.length; i++) {
             seq[i] = random.nextInt(scope);
@@ -35,8 +34,22 @@ public class SortUtils {
         return seq;
     }
 
+    public static Integer[] shuffledSeq(int start, int end) {
+        List<Integer> list = new ArrayList<>();
+        Integer[] seq =  new Integer[end - start + 1];
+        for (int i = start; i<= end; i++) {
+            list.add(i);
+        }
+        Collections.shuffle(list);
+        return list.toArray(seq);
+    }
+
     public static boolean less(Comparable v, Comparable u) {
         return v.compareTo(u) < 0;
+    }
+
+    public static boolean more(Comparable v, Comparable u) {
+        return v.compareTo(u) > 0;
     }
 
     public static void swap(Comparable[] a, int i, int j) {
