@@ -11,6 +11,16 @@ import static me.rui.ds.sort.SortUtils.randomSeq;
  */
 public class SortTest {
 
+    /**
+     *  堆排序
+     */
+    @Test
+    public void heapTest(){
+        Sortable sortable = new HeapSort();
+        Integer[] a = randomSeq(100, 1000);
+        sortable.sort(a);
+        Assert.assertTrue(isSorted(a));
+    }
 
     /**
      * 冒泡排序测试
