@@ -75,7 +75,7 @@
 
 - 实现// TODO
 - 平均时间啊复杂度O(n)
-- 划分均匀的区间为桶，桶内再进行排序。
+- 假设输入数据服从均匀分布，划分均匀的区间为桶，桶内再进行排序。
 
 8. 基数排序  
  
@@ -84,7 +84,7 @@
     - 最低位优先(Least Significant Digit first, LSD)。
 
 (1) MSD基数排序
-
+- MSDSort
 
 (2) LSD基数排序 
 - O(d(n + radix)):n分配、radix收集
