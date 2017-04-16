@@ -5,11 +5,23 @@ import org.junit.Test;
 
 import static me.rui.ds.sort.SortUtils.isSorted;
 import static me.rui.ds.sort.SortUtils.randomSeq;
+import static me.rui.ds.sort.SortUtils.shuffledSeq;
 
 /**
  * Created by cr on 2017/3/31.
  */
 public class SortTest {
+
+    /**
+     *  MSD基数排序测试
+     */
+    @Test
+    public void msdTest() {
+        Sortable sortable = new MSDSort();
+        Integer[] a = shuffledSeq(100, 500);
+        sortable.sort(a);
+        Assert.assertTrue(isSorted(a));
+    }
 
     /**
      *  堆排序
