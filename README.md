@@ -10,9 +10,10 @@
 
 2. Package列表
 
-- ds：数据结构包
+- [ds：数据结构包](src/main/java/me/rui/ds)
     - [sort：排序包](src/main/java/me/rui/ds/sort)
-    - (search：搜索/查找包)
-    - (colloection：集合包)
-- algorithm：高级算法包
-- leecode：leecode练习包
+    - [search：搜索/查找包](src/main/java/me/rui/ds/search)
+    - [tree：树包](src/main/java/me/rui/ds/tree)
+    - [colloection：集合包](src/main/java/me/rui/ds/collection)
+- [algorithm：高级算法包](src/main/java/me/rui/algorithm)
+- [leecode：leecode练习包]((src/main/java/me/rui/leetcode))
