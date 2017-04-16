@@ -11,8 +11,8 @@
 2. Package列表
 
 - ds：数据结构包
-    - sort：排序包
-    - search：搜索/查找包
-    - colloection：集合包
+    - [src/main/java/me/rui/ds/sort](sort：排序包)
+    - (search：搜索/查找包)
+    - (colloection：集合包)
 - algorithm：高级算法包
 - leecode：leecode练习包
