@@ -17,4 +17,4 @@
     - [colloection：集合包](src/main/java/me/rui/ds/collection)
 - [algorithm：高级算法包](src/main/java/me/rui/algorithm)
 - [leecode：leecode练习包]((src/main/java/me/rui/leetcode))
-- [剑指offer练习包]((src/main/java/me/rui/sword))
+- [剑指offer练习包](src/main/java/me/rui/sword)
