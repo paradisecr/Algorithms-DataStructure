@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by cr on 2017/4/20.
  *
- * 从头到尾打印链表
+ * 从尾到头打印链表
  * 题目描述: 输入一个链表，从尾到头打印链表每个节点的值。
  */
 public class PrintListFromTailToHead {
