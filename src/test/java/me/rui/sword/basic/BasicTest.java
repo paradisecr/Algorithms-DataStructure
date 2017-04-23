@@ -5,13 +5,55 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 /**
  * Created by cr on 2017/4/19.
  */
 public class BasicTest {
 
+
+
+    @Test
+    public void power() {
+        Power power = new Power();
+        Assert.assertEquals(16.0, power.power(2.0, 4), 0.0000001);
+    }
+
+    @Test
+    public void nmberOf1Test() {
+        Assert.assertEquals(3, new NumberOf1().numberOf1(7));
+    }
+    @Test
+    public void fibonacciTest() {
+        Fibonacci fibonacci  = new Fibonacci();
+        Assert.assertEquals(3, fibonacci.fibonacci(4));
+    }
+    @Test
+    public void minNumberInRotateArray() {
+        MinNumberInRotateArray finder = new MinNumberInRotateArray();
+        int[] array1 = new int[]{3,4,5,1,2};
+        Assert.assertEquals(1,finder.minNumberInRotateArray(array1));
+        int[] array2 = new int[]{1,1,0,1,1};
+        Assert.assertEquals(0,finder.minNumberInRotateArray(array2));
+    }
+
+    @Test
+    public void stackToQueueTest() {
+        try {
+            StackToQueue queue = new StackToQueue();
+            queue.push(1);
+            Assert.assertEquals(1,queue.pop());
+            queue.push(1);
+            queue.push(2);
+            Assert.assertEquals(1,queue.pop());
+            queue.push(3);
+            Assert.assertEquals(2,queue.pop());
+            Assert.assertEquals(3,queue.pop());
+        } catch (Exception e) {
+
+        }
+
+    }
 
     @Test
     public void reConstructBinaryTreeTest() {

@@ -14,6 +14,7 @@ public class InsertSort implements Sortable {
     }
     public void sort(Comparable[] a, int left, int right) {
         int n = a.length;
+        // [left,i) 有序
         for (int i = left + 1; i <= right; i++) {
             Comparable tmp = a[i];
             int j = i-1;
