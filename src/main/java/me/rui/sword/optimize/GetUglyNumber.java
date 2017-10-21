@@ -1,5 +1,7 @@
 package me.rui.sword.optimize;
 
+import java.util.Scanner;
+
 /**
  * Created by cr on 2017/4/23.
  *  题目描述
@@ -10,7 +12,12 @@ package me.rui.sword.optimize;
  *  从小到大，顺序构造丑数。缺点是占用空间比较大。
  */
 public class GetUglyNumber {
-    public int getUglyNumber(int index) {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int index = scanner.nextInt();
+        System.out.println(getUglyNumber(index));
+    }
+    public static  int getUglyNumber(int index) {
         if (index <=0) return 0;
         int[] seq = new int[index];
         seq[0] = 1;
@@ -31,7 +38,7 @@ public class GetUglyNumber {
         }
         return seq[right];
     }
-    private int min(int a, int b, int c) {
+    private static int min(int a, int b, int c) {
         int tmp = a;
         if (b < tmp) tmp = b;
         if (c < tmp) tmp = c;
